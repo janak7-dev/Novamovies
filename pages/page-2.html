@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-pages.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Bungee+Inline&family=Chakra+Petch:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Fredoka+One&family=Monoton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Nova-Movies - Full HD Movies</title>
+
+    <link rel="shortcut icon" href="/pngegg.png" />
+  </head>
+  <body>
+    <!-------------Navigation--------->
+
+    <nav class="navigation">
+      <!----------------menu btn--------->
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <!--logo-->
+      <a href="/index.html" class="logo"> Nova-Movies <span>.hd</span> </a>
+
+      <!---menu------->
+      <ul class="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/genre.html">Genre</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Tamil</a></li>
+        <li><a href="#">Anime</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Games</a></li>
+      </ul>
+
+      <div class="form-container">
+        <a class="search-box" href="/search.html">
+          <!--input-->
+          <input
+            id="search"
+            type="text"
+            name="search"
+            placeholder="Search Movies"
+            class="search-input"
+            required
+          />
+          <!---btn----->
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </a>
+      </div>
+    </nav>
+
+    <!---=====================Latest Movies Section=============================-->
+    <!--==========Latest Movies-=============-->
+    <section id="latest">
+      <!--=========heading========-->
+      <div class="latest-heading">
+        <h1>LATEST MOVIES</h1>
+      </div>
+      <!---======-container--=====-->
+      <div class="post-container">
+        <!---post-box-->
+        <a
+          href="/sub-pages/iron-man-triology - Copy (20) - Copy - Copy.html"
+          class="post-box"
+        >
+          <!---===img====-->
+          <img
+            class="movie-img"
+            src="/images/captain america port.jpg"
+            alt=""
+          />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">Captain America Triology</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+        <!---post-box-end-->
+        <!---=====================Latest Movies Section End=============================-->
+      </div>
+      <!----container-end-->
+    </section>
+    <!---page-number-->
+    <div class="page-number">
+      <a href="/index.html">1</a>
+      <a href="pages/page-2.html" class="page-active">2</a>
+      <a href="">3</a>
+      <a href="">-</a>
+      <a href="">100</a>
+    </div>
+
+    <!----footer----->
+    <footer>
+      <!---footer-logo-->
+      <a href="index.html" class="logo"> Nova-Movies <span>hd</span> </a>
+      <!---copyright-->
+      <span class="copyright">
+        <strong> Copyright &copy; &nbsp 2022 - Created by </strong> &nbsp; Nova
+        Movies Team
+      </span>
+    </footer>
+    <!----Ad-block detector-->
+
+    <!----js arrow swipe -->
+    <script src="app.js"></script>
+    <!----js arrow swipe -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="data:text/javascript;base64,ZnVuY3Rpb24gaW5pdCgpe2Fkc0Jsb2NrZWQoZnVuY3Rpb24obyl7bz8oJCgiI1NUMW1hciIpLnJlbW92ZUNsYXNzKCJoaWRkZW4iKSwkKCIuYXQtYWRibG9jay13cmFwcGVyIikuYWRkQ2xhc3MoImZhZGVJbiIpKTpjb25zb2xlLmxvZygiQWQtYmxvY2tlciBFbmFibGVkIDogIitvKX0pfWZ1bmN0aW9uIGFkc0Jsb2NrZWQobyl7dmFyIG49bmV3IFJlcXVlc3QoImh0dHBzOi8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIix7bWV0aG9kOiJIRUFEIixtb2RlOiJuby1jb3JzIn0pO2ZldGNoKG4pLnRoZW4oZnVuY3Rpb24obyl7cmV0dXJuIG99KS50aGVuKGZ1bmN0aW9uKG4pe2NvbnNvbGUubG9nKG4pLG8oITEpfSkuY2F0Y2goZnVuY3Rpb24obil7Y29uc29sZS5sb2cobiksbyghMCl9KX1zZXRUaW1lb3V0KCgpPT57aW5pdCgpfSwwKSwkKCIuYWQtYnRuIikuY2xpY2soZnVuY3Rpb24oKXtsb2NhdGlvbi5yZWxvYWQoKX0pOw==  " />
+    <script>
+      window.onscroll = scrollPercentage;
+      window.onload = scrollPercentage;
+
+      /*------arrow button-----*/
+
+      const arrows = document.querySelectorAll(".arrow");
+      const movieLists = document.querySelectorAll(".movie-list");
+
+      arrows.forEach((arrow, i) => {
+        const itemNumber = movieLists[i].querySelectorAll("img").length;
+        let clickCounter = 0;
+        arrow.addEventListener("click", () => {
+          const ratio = Math.floor(window.innerWidth / 270);
+          clickCounter++;
+          if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
+            movieLists[i].style.transform = `translateX(${
+              movieLists[i].computedStyleMap().get("transform")[0].x.value - 455
+            }px)`;
+          } else {
+            movieLists[i].style.transform = "translateX(0)";
+            clickCounter = 0;
+          }
+        });
+
+        console.log(Math.floor(window.innerWidth / 270));
+      });
+
+      /*----<!--menu-btn-fixed-when-scroll-->-----*/
+
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 20) {
+          $(".navigation").addClass("fix-icon");
+        } else {
+          $(".navigation").removeClass("fix-icon");
+        }
+      });
+    </script>
+  </body>
+</html>

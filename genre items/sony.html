@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/search-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Bungee+Inline&family=Chakra+Petch:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Fredoka+One&family=Monoton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Nova-Movies - Full HD Movies</title>
+
+    <link rel="shortcut icon" href="/pngegg.png" />
+  </head>
+  <body>
+    <!-------------Navigation--------->
+
+    <nav class="navigation">
+      <!----------------menu btn--------->
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <!--logo-->
+      <a href="index.html" class="logo"> Nova-Movies <span>.hd</span> </a>
+
+      <!---menu------->
+      <ul class="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/genre.html">Genre</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Dubbed</a></li>
+        <li><a href="#">Anime</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Games</a></li>
+      </ul>
+    </nav>
+    <div class="search-box">
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="myFunction()"
+        placeholder="Search for movies"
+      />
+      <button type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <h1 class="popular">Popular Movies</h1>
+
+    <ul id="myUL">
+      <li>
+        <a
+          href="/sub-pages/spider man collection(tobey).html"
+          class="post-box"
+          id="spider-man"
+        >
+          <!---===img====-->
+          <img
+            class="movie-img"
+            src="/images/spider man collection tobey.jpg"
+            alt=""
+          />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">Spider Man Triology (Tobey)</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/sub-pages/the amazing spider man collection(andrew).html"
+          class="post-box"
+          id="spider-man"
+        >
+          <!---===img====-->
+          <img
+            class="movie-img"
+            src="/images/the amazing spider man  port.jpg"
+            alt=""
+          />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name"
+            >The Amazing Spider Man Duology (Andrew)</span
+          >
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/sub-pages/spiderman collection (Tom ).html"
+          class="post-box"
+          id="spiderman"
+        >
+          <!---===img====-->
+          <img
+            class="movie-img"
+            src="/images/spider man collection tom.jpg"
+            alt=""
+          />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">Spider Man Triology(Tom)</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/sub-pages/captain america.html"
+          class="post-box"
+          id="captain-america"
+        >
+          <!---===img====-->
+          <img
+            class="movie-img"
+            src="/images/captain america port.jpg"
+            alt=""
+          />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">Captain America Triology</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/sub-pages/iron-man-triology.html"
+          class="post-box"
+          id="iron-man"
+        >
+          <!---===img====-->
+          <img class="movie-img" src="/images/iron man port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">Iron Man Triology</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.3</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+      <li>
+        <a href="/sub-pages/hulk.html" class="post-box" id="hulk">
+          <!---===img====-->
+          <img class="movie-img" src="/images/hulk port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">The Incridible Hulk</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.3</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+      <li>
+        <a href="/sub-pages/thor triology.html" class="post-box" id="thor">
+          <!---===img====-->
+          <img class="movie-img" src="/images/thor port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">Thor Triology</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.3</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/sub-pages/guardians of the galaxy duology.html"
+          class="post-box"
+          id="guardians-of-the-galaxy"
+        >
+          <!---===img====-->
+          <img
+            class="movie-img"
+            src="/images/guardians of the galaxy port.jpg"
+            alt=""
+          />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">Guardians of the Galaxy Duology</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/sub-pages/doctor strange.html"
+          class="post-box"
+          id="doctor-strange"
+        >
+          <!---===img====-->
+          <img class="movie-img" src="/images/doctor strange port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">Doctor Strange</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: fantasy, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+      <li>
+        <a href="/sub-pages/ant man duology.html" class="post-box" id="ant-man">
+          <!---===img====-->
+          <img class="movie-img" src="/images/ant man port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">Ant Man Duology</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="/sub-pages/black panther.html"
+          class="post-box"
+          id="black-panther"
+        >
+          <!---===img====-->
+          <img class="movie-img" src="/images/balck panther prt.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">Black Panther</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="/sub-pages/captain marvel.html"
+          class="post-box"
+          id="captain-marvel"
+        >
+          <!---===img====-->
+          <img class="movie-img" src="/images/captain marvel port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">Captain Marvel</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="/sub-pages/wanda vision.html"
+          class="post-box"
+          id="wanda-vision"
+        >
+          <!---===img====-->
+          <img class="movie-img" src="/images/wanda vision port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">Wanda Vision</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="/sub-pages/falcon and the winter soldier.html"
+          class="post-box"
+          id="falcon-and-the-winter-soldier"
+        >
+          <!---===img====-->
+          <img
+            class="movie-img"
+            src="/images/falcon and the winter soldier port.jpg"
+            alt=""
+          />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">The Falcon and the Winter Soldier</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a href="/sub-pages/loki.html" class="post-box" id="loki">
+          <!---===img====-->
+          <img class="movie-img" src="/images/loki port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">Loki</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a href="/sub-pages/black widow.html" class="post-box" id="black widow">
+          <!---===img====-->
+          <img class="movie-img" src="/images/black widow port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">Black Widow</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a href="/sub-pages/what if.html" class="post-box" id="what-if">
+          <!---===img====-->
+          <img class="movie-img" src="/images/what if port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">What If...?</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a href="/sub-pages/eternals.html" class="post-box" id="eternals">
+          <!---===img====-->
+          <img class="movie-img" src="/images/eternals port.png" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">Eternals</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <!---post-box-->
+        <a
+          href="/sub-pages/shang chi and the legends of ten rings.html"
+          class="post-box"
+          id="shang-chi"
+        >
+          <!---===img====-->
+          <img class="movie-img" src="/images/shang chi port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">Shang-Chi and the Legend of Ten Rings</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="/sub-pages/Avengers Collection.html"
+          class="post-box"
+          id="avengers-collection"
+        >
+          <!---===img====-->
+          <img class="movie-img" src="/images/avengers port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+          <!---bottom-text-->
+          <span class="movie-name">Avengers Collection</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li>
+        <a href="/sub-pages/hawkeye.html" class="post-box" id="hawkeye">
+          <!---===img====-->
+          <img class="movie-img" src="/images/hawkeye port.jpg" alt="" />
+          <!----gradient-overlay----->
+          <img class="gradient-overlay" src="/gradient-overlay1.png" alt="" />
+          <!-----quality------>
+          <span class="quality"
+            >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FULL
+            HD</span
+          >
+
+          <span class="movie-name">Hawkeye</span>
+          <span class="movie-name-1"></span>
+          <span class="category">CATEGORY: sci-fi, action</span>
+          <span class="rating"
+            ><strong>IMDb <span class="star">&#11088;</span> 7.4</strong></span
+          >
+          <!---download-btn-->
+          <button class="movie-list-item-button-2">
+            <link href="link" target="_blank" /> DOWNLOAD
+          </button>
+        </a>
+      </li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!----footer----->
+    <footer>
+      <!---footer-logo-->
+      <a href="index.html" class="logo"> Nova-Movies <span>hd</span> </a>
+      <!---copyright-->
+      <span class="copyright">
+        <strong> Copyright &copy; &nbsp 2022 - Created by </strong> &nbsp; Nova
+        Movies Team
+      </span>
+    </footer>
+    <!----Ad-block detector-->
+    <div id="detect"></div>
+    <div class="alert-body">
+      <div class="wrapper">
+        <div class="content">
+          <div class="warn-icon">
+            <span class="icon"><i class="fas fa-exclamation"></i></span>
+          </div>
+          <h2>AdBlock Detected!</h2>
+          <p>
+            Our website is made possible by displaying ads to our visitors.
+            Please supporting us by turning off your ad-blocker (OR) Open our
+            site in Chrome or Microsoft Edge
+          </p>
+          <div class="btn"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const detect = document.querySelector("#detect");
+      const wrapper = document.querySelector(".wrapper");
+
+      let adClasses = [
+        "ad",
+        "ads",
+        "adsbox",
+        "doubleclick",
+        "ad-placement",
+        "ad-placeholder",
+        "adbadge",
+        "BannerAd",
+      ];
+      for (let item of adClasses) {
+        detect.classList.add(item);
+      }
+      let getProperty = window
+        .getComputedStyle(detect)
+        .getPropertyValue("display");
+      if (!wrapper.classList.contains("show")) {
+        getProperty == "none"
+          ? wrapper.classList.add("show")
+          : wrapper.classList.remove("show");
+      }
+      button.addEventListener("click", () => {
+        wrapper.classList.remove("show");
+      });
+    </script>
+
+    <script src="/search.js"></script>
+  </body>
+</html>

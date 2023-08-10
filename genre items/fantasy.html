@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/search-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Bungee+Inline&family=Chakra+Petch:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Fredoka+One&family=Monoton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Nova-Movies - Full HD Movies</title>
+
+    <link rel="shortcut icon" href="/pngegg.png" />
+  </head>
+  <body>
+    <!-------------Navigation--------->
+
+    <nav class="navigation">
+      <!----------------menu btn--------->
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <!--logo-->
+      <a href="index.html" class="logo"> Nova-Movies <span>.hd</span> </a>
+
+      <!---menu------->
+      <ul class="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/genre.html">Genre</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Dubbed</a></li>
+        <li><a href="#">Anime</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Games</a></li>
+      </ul>
+    </nav>
+    <div class="search-box">
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="myFunction()"
+        placeholder="Search for movies"
+      />
+      <button type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <h1 class="popular">Popular Movies</h1>
+
+    <ul id="myUL"></ul>
+    <!----footer----->
+    <footer>
+      <!---footer-logo-->
+      <a href="index.html" class="logo"> Nova-Movies <span>hd</span> </a>
+      <!---copyright-->
+      <span class="copyright">
+        <strong> Copyright &copy; &nbsp 2022 - Created by </strong> &nbsp; Nova
+        Movies Team
+      </span>
+    </footer>
+
+    <!----Ad-block detector-->
+    <div id="detect"></div>
+    <div class="alert-body">
+      <div class="wrapper">
+        <div class="content">
+          <div class="warn-icon">
+            <span class="icon"><i class="fas fa-exclamation"></i></span>
+          </div>
+          <h2>AdBlock Detected!</h2>
+          <p>
+            Our website is made possible by displaying ads to our visitors.
+            Please supporting us by turning off your ad-blocker (OR) Open our
+            site in Chrome or Microsoft Edge
+          </p>
+          <div class="btn"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const detect = document.querySelector("#detect");
+      const wrapper = document.querySelector(".wrapper");
+
+      let adClasses = [
+        "ad",
+        "ads",
+        "adsbox",
+        "doubleclick",
+        "ad-placement",
+        "ad-placeholder",
+        "adbadge",
+        "BannerAd",
+      ];
+      for (let item of adClasses) {
+        detect.classList.add(item);
+      }
+      let getProperty = window
+        .getComputedStyle(detect)
+        .getPropertyValue("display");
+      if (!wrapper.classList.contains("show")) {
+        getProperty == "none"
+          ? wrapper.classList.add("show")
+          : wrapper.classList.remove("show");
+      }
+      button.addEventListener("click", () => {
+        wrapper.classList.remove("show");
+      });
+    </script>
+
+    <script src="/search.js"></script>
+  </body>
+</html>

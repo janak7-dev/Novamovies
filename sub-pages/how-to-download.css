@@ -1,0 +1,719 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins;
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: rgb(255, 255, 0);
+  color: black;
+}
+/*----hide-website-scroll-bar-----*/
+body::-webkit-scrollbar {
+  display: none;
+}
+.body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/*==========navigation=========*/
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px;
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+}
+.navigation .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 20px 10px;
+  z-index: 103;
+}
+.navigation .menu-icon .nav-icon {
+  background-color: white;
+  display: block;
+  height: 2px;
+  width: 25px;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.navigation .menu-icon .nav-icon::before,
+.navigation .menu-icon .nav-icon::after {
+  background-color: #ffffffcc;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all ease-out 0.2s;
+}
+
+.navigation .menu-icon .nav-icon::before {
+  top: 8px;
+}
+
+.navigation .menu-icon .nav-icon::after {
+  top: -8px;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.menu-btn {
+  display: none;
+}
+/*---menu---*/
+.menu {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.87);
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: fade 0.5;
+}
+.menu li a {
+  color: #ffffff;
+  margin: 0px 40px;
+  font-size: 2rem;
+  font-family: "Monoton", cursive;
+  transition: all ease 0.5s;
+}
+.menu li a:hover {
+  font-size: 2.3rem;
+  color: rgb(255, 255, 0);
+  transition: all ease 0.5s;
+}
+.navigation .menu-btn:checked ~ .menu {
+  display: flex;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*-----logo--------*/
+.logo {
+  color: rgb(255, 255, 0);
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0px auto 0px 40px;
+  display: flex;
+  align-items: center;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  font-size: 0.9rem;
+  margin-left: 5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Staatliches", cursive;
+}
+
+/*----search-box------*/
+.search-box {
+  background-color: rgb(34, 34, 34);
+  padding: 3px 20px;
+  border-radius: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-box input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.search-box input::placeholder {
+  color: rgb(35, 149, 255);
+}
+
+.search-box button {
+  background-color: transparent;
+  font-size: 20px;
+  color: rgb(35, 149, 255);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.movie-list-title {
+  object-position: center;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Chakra Petch", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(35, 149, 255);
+  height: fit-content;
+}
+
+/*=========post-box========*/
+.post-box {
+  background-color: rgb(37, 37, 37);
+  height: fit-content;
+  width: 900px;
+  margin-left: 310px;
+  border-radius: 20px;
+}
+
+.movie-details {
+  padding: 45px;
+  color: rgb(255, 255, 0);
+  font-size: 23px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.movie-name-colour {
+  color: class= "bold";
+}
+.movie-poster {
+  padding: 45px;
+  height: 100%;
+  width: 100%;
+}
+.movie-name {
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 255, 0);
+}
+
+.movie-poster {
+  padding: 45px;
+}
+.bold {
+  color: rgb(35, 149, 255);
+}
+.note {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  font-family: sans-serif;
+  padding: 45px;
+  text-align: center;
+  text-justify: newspaper;
+  justify-self: end;
+}
+.note-colour {
+  color: red;
+}
+
+.download-title-1 {
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.btn-section {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 0px;
+  grid-gap: 50px;
+  align-items: center;
+  text-align: center;
+}
+.btn {
+  background-color: red;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  font-family: monospace;
+  font-weight: bold;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.website-desc {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  font-family: sans-serif;
+  padding: 45px;
+  text-align: center;
+  text-justify: newspaper;
+  justify-self: end;
+}
+
+/*----footer---*/
+.footer {
+  background-color: #0e0e0ec2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+.copyright {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  margin-left: 40px;
+}
+
+.footer .logo {
+  margin: 0px;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 50px;
+}
+
+/*---fix-menu-btnl----*/
+.fix-icon .menu-icon {
+  position: fixed;
+  left: 40px;
+  top: 40px;
+  background-color: rgb(31, 31, 31);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*---scroll-progress-bar----*/
+#progress {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+  display: grid;
+
+  z-index: 105;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+  background-color: #1c1f2500;
+  border-radius: 50%;
+  border-radius: 50%;
+  display: grid;
+
+  font-weight: 600;
+  font-size: 0px;
+}
+/*----making-home page responsive----*/
+@media (max-width: 1200px) {
+  #movie-list-container,
+  #latest {
+    width: 90%;
+  }
+  .menu li a {
+    margin: 0px;
+    font-size: 1.6rem;
+  }
+  .menu {
+    flex-direction: column;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .post-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 824px) {
+  .navigation {
+    padding: 20px 10px;
+    width: 90%;
+  }
+  .logo,
+  footer .logo {
+    font-size: 1.3rem;
+  }
+  .post-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer {
+    padding: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .navigation {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 0px;
+  }
+  .logo {
+    margin: 0px;
+  }
+  .search-box {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .menu li a:hover {
+    font-size: 1.8rem;
+  }
+  .post-container {
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    left: 10px;
+  }
+  .post-box {
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    left: 10px;
+  }
+
+  .footer .logo {
+    margin-left: 30px;
+  }
+
+  .footer .copyright {
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  .fix-icon .menu-icon {
+    left: 10px;
+    top: 0px;
+    border-radius: 4px;
+  }
+}
+
+.counter {
+  min-width: 300px;
+  background: rgba(17, 17, 17, 0);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  box-shadow: 5px 5px 50px black;
+}
+
+/* Ads blocker by anutrickz 2022 */
+.hidden {
+  display: none !important;
+}
+.center {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ADs-BG {
+  background: rgba(58, 58, 58, 0.678);
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+}
+.at-adblock-content-wrapper {
+  box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  max-width: 400px;
+  background: #fff;
+  height: auto;
+  width: 100%;
+}
+.at-adblock-content {
+  padding: 30px 50px;
+}
+.logo-ad-blocker {
+  align-self: center;
+}
+
+.at-adblock-text,
+.at-adblock-text h3 {
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+}
+.at-adblock-text h3 {
+  font-size: 25px;
+  margin-top: 1rem;
+}
+.at-adblock-text p {
+  margin: 20px auto;
+  font-weight: 500;
+  font-size: 13px;
+}
+.at-adblock-button .ad-btn {
+  line-height: 1em;
+  border-radius: 30px;
+  border: none;
+  border: 2px solid #b23939;
+  padding: 10px 20px;
+  width: 100%;
+  background: #b23939;
+  color: #fff;
+  transition: 0.2s;
+}
+.at-adblock-button .ad-btn:hover {
+  background: #fff;
+  color: #b23939;
+  border: 2px solid #b23939;
+}
+@media (max-width: 480px) {
+  .at-adblock-content-wrapper {
+    max-width: 300px;
+  }
+  .at-adblock-text h3 {
+    font-size: 20px;
+  }
+  .at-adblock-text p {
+    font-size: 12px;
+  }
+  .at-adblock-button .ad-btn {
+    font-size: 12px;
+  }
+}
+/* end */
+/*----making-sub-page-responsive----*/
+
+@media (max-width: 1200px) {
+  #movie-list-container,
+  #latest {
+    width: 90%;
+  }
+  .menu li a {
+    margin: 0px;
+    font-size: 1.6rem;
+  }
+  .menu {
+    flex-direction: column;
+    column-gap: 20px;
+  }
+  .post-box {
+    align-self: center;
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1100px) {
+  #movie-list-container,
+  #latest {
+    width: 90%;
+  }
+  .menu li a {
+    margin: 0px;
+    font-size: 1.6rem;
+  }
+  .menu {
+    flex-direction: column;
+    column-gap: 20px;
+  }
+  .post-box {
+    align-self: center;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .movie-list-title {
+    height: fit-content;
+  }
+  #movie-list-container,
+  #latest {
+    width: 90%;
+  }
+  .menu li a {
+    margin: 0px;
+    font-size: 1.6rem;
+  }
+  .menu {
+    flex-direction: column;
+    column-gap: 20px;
+  }
+  .post-box {
+    align-self: center;
+    width: 800px;
+    margin-left: 50px;
+    height: fit-content;
+  }
+  .movie-poster {
+    align-self: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 824px) {
+  .movie-list-title {
+    height: fit-content;
+  }
+  .movie-list-title {
+    height: fit-content;
+  }
+  .post-box {
+    height: fit-content;
+    width: 600px;
+    margin-left: 110px;
+    text-align: center;
+    align-content: center;
+  }
+  .movie-poster {
+    align-self: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .movie-list-title {
+    height: fit-content;
+  }
+  .movie-list-title {
+    height: fit-content;
+  }
+  .post-box {
+    height: fit-content;
+    width: 600px;
+    margin-left: 50px;
+    text-align: center;
+    align-content: center;
+  }
+  .movie-poster {
+    align-self: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-list-title {
+    height: fit-content;
+  }
+  .post-box {
+    height: fit-content;
+    width: 550px;
+    margin-left: 25px;
+    text-align: center;
+    align-content: center;
+  }
+  .movie-poster {
+    align-self: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .movie-list-title {
+    font-size: 30px;
+    height: fit-content;
+  }
+  .movie-name {
+    font-size: 25px;
+  }
+  .post-box {
+    height: fit-content;
+    width: 450px;
+    margin-left: 20px;
+    text-align: center;
+    align-content: center;
+  }
+  .movie-poster {
+    align-self: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .movie-list-title {
+    font-size: 30px;
+
+    height: fit-content;
+  }
+  .movie-details {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .post-box {
+    height: fit-content;
+    width: 310px;
+    margin-left: 10px;
+    text-align: center;
+    align-content: center;
+  }
+  .movie-poster {
+    align-self: center;
+    height: 100%;
+    width: 100%;
+  }
+  .download-title-1 {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .website-desc {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .note {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .movie-name {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .btn {
+    height: 40px;
+    width: 130px;
+    font-size: 13px;
+  }
+  .how-to-download-btn {
+    height: 40px;
+    width: 140px;
+    font-size: 13px;
+  }
+}
